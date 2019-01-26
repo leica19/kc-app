@@ -1,9 +1,37 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Two
+      Home
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <!-- Default Item -->
+<ion-item>
+  <ion-label>
+    Item
+  </ion-label>
+</ion-item>
+
+<!-- Item as a Button -->
+<ion-item (click)="buttonClick()">
+  <ion-label>
+    Button Item
+  </ion-label>
+</ion-item>
+
+<!-- Item as an Anchor -->
+<ion-item href="https://www.ionicframework.com">
+  <ion-label>
+    Anchor Item
+  </ion-label>
+</ion-item>
+
+<ion-item color="secondary">
+  <ion-label>
+    Secondary Color Item
+  </ion-label>
+</ion-item>
+
+</ion-content>
