@@ -1,34 +1,55 @@
 <ion-header>
   <ion-toolbar>
+    <div text-center>
     <ion-title>
-      Home
+      Wanted
     </ion-title>
+  </div>
   </ion-toolbar>
 </ion-header>
 
-<script>
-var slides = document.querySelector('ion-slides');
-slides.options = {
-  effect: 'flip'
-}
-</script>
-
 <ion-content>
-  
-  <ion-slides pager="true">
+  <ion-card>
+  <ion-card-header>
+    <ion-card-subtitle></ion-card-subtitle>
+    <div text-center>
+    <ion-card-title>株式会社</ion-card-title>
+  </div>
+  </ion-card-header>
 
-    <ion-slide>
-      <h1>hoge株式会社</h1>
-    </ion-slide>
+  <ion-card-content>
+    
+    
+    <video width="100%" controls>
+  <source src="https://www.youtube.com/watch?v=vcLAminT6t4" type="video/mp4">
+</video>
+    <ion-list>
+  <ion-item>
+    <ion-thumbnail slot="start">
+    <video width="100%" controls>
+  <source src="https://www.youtube.com/watch?v=vcLAminT6t4" type="video/mp4">
+</video>
+</ion-thumbnail>
 
-    <ion-slide>
-      <h1>huge株式会社</h1>
-    </ion-slide>
+    <ion-label></ion-label>
+  </ion-item>
+</ion-list>    
+時代を先取る商品が私たちにはあります！
+優れた製品を絶えず提供し、常にお客様のニーズに応えられる会社でありたい。それが当社のモットーです。
+  </ion-card-content>
+</ion-card>
 
-    <ion-slide>
-      <h1>gigi株式会社</h1>
-    </ion-slide>
-  </ion-slides>
+<ion-card>
+  <ion-item>
+    <ion-icon name="pin" slot="start"></ion-icon>
+    <ion-label>ion-item in a card, icon left, button right</ion-label>
+    <ion-button fill="outline" slot="end">View</ion-button>
+  </ion-item>
 
+  <ion-card-content>
+    This is content, without any paragraph or header tags,
+    within an ion-card-content element.
+  </ion-card-content>
+</ion-card>
 
 </ion-content>
