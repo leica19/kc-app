@@ -6,32 +6,29 @@
   </ion-toolbar>
 </ion-header>
 
+<script>
+var slides = document.querySelector('ion-slides');
+slides.options = {
+  effect: 'flip'
+}
+</script>
+
 <ion-content>
-  <!-- Default Item -->
-<ion-item>
-  <ion-label>
-    Item
-  </ion-label>
-</ion-item>
+  
+  <ion-slides pager="true">
 
-<!-- Item as a Button -->
-<ion-item (click)="buttonClick()">
-  <ion-label>
-    Button Item
-  </ion-label>
-</ion-item>
+    <ion-slide>
+      <h1>hoge株式会社</h1>
+    </ion-slide>
 
-<!-- Item as an Anchor -->
-<ion-item href="https://www.ionicframework.com">
-  <ion-label>
-    Anchor Item
-  </ion-label>
-</ion-item>
+    <ion-slide>
+      <h1>huge株式会社</h1>
+    </ion-slide>
 
-<ion-item color="secondary">
-  <ion-label>
-    Secondary Color Item
-  </ion-label>
-</ion-item>
+    <ion-slide>
+      <h1>gigi株式会社</h1>
+    </ion-slide>
+  </ion-slides>
+
 
 </ion-content>
